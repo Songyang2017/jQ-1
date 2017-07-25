@@ -1,0 +1,471 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no" />
+	<title>index</title>
+	<script src="js/scale.js" type="text/javascript" charset="utf-8"></script>
+	<link rel="stylesheet" href="css/swiper.min.css">
+	<link rel="stylesheet" href="css/animate.min.css">
+	<style>
+		*{
+			margin: 0;
+			padding: 0;
+		}
+		html{
+			font-size: 100%;
+		}
+		.s-icon{
+			position: absolute;
+			bottom: 0;
+			margin-left: -0.5rem;
+			display: block;
+			left: 50%;
+
+		}
+		.p1-1{
+			width: 70%;
+			position: absolute;
+			top: 1.8rem;
+			left: 50%;
+			margin-left: -2.275rem;
+		}
+		.p1-2{
+			width: 70%;
+			position: absolute;
+			top: 3.8rem;
+			left: 50%;
+			margin-left: -2.24rem;
+		}
+		.p2-1,.p2-2{
+			width: 90%;
+			position: absolute;
+			top:2.2rem;
+			left: 50%;
+			margin-left: -2.88rem;
+			box-shadow: 0 0 10px 8px rgba(255,255,255,.5);
+		}
+		.p2-2{
+			box-shadow: none;
+		}
+		.box{
+			position: absolute;
+			top: 3rem;
+			left: 1rem;
+		}
+		.t{
+			/*background-color: gold;*//*
+			width: 0;
+		    height: 0;*/
+		    border-left: 1.5rem solid transparent;
+		    border-right: 1.5rem solid transparent;
+		    border-bottom: 2rem solid gold;
+
+		}
+		.m{
+			width: 3rem;
+			height: 2rem;
+			background-color: gold;
+
+		}
+		.b{
+			border-left: 1.5rem solid transparent;
+		    border-right: 1.5rem solid transparent;
+		    border-top: 2rem solid gold;
+		}
+		.p4-0{
+			width: 5rem;
+			font-size: 0.5rem;
+			color:#fff;
+			margin: 1rem auto;
+		}
+		.p4-1{
+			width: 70%;
+			display: block;
+			margin: 2.7rem auto;
+		}
+		.p5-1{
+			width: 55%;
+			display: block;
+			margin: 0.3rem auto;
+			z-index: 100;
+		}
+		.p5-2{
+			width: 95%;
+			display: block;
+			margin: -60% auto;
+			z-index: 90;
+		}
+		.p5-3{
+			width: 5rem;
+			font-size: 0.25rem;
+			color:#fff;
+			margin: 5.5rem auto;
+		}
+		.p9-1{
+			margin: 0.6rem auto;
+			display: block;
+		}
+		.p9-2{
+			width: 100%;
+			position: absolute;
+			top: 0;
+		}
+		.p9-3{
+			width: 30%;
+			position: absolute;
+			left: 1rem;
+			top: 2rem;
+		}
+		.p9-4{
+			width: 30%;
+			position: absolute;
+			left: 3.5rem;
+			top: 2rem;
+		}
+		.p9-5{
+			width: 30%;
+			position: absolute;
+			left: 1rem;
+			top: 4.7rem;
+		}
+		.p9-6{
+			width: 30%;
+			position: absolute;
+			left: 3.5rem;
+			top: 4.7rem;
+		}
+		.p9-7{
+			width: 30%;
+			position: absolute;
+			left: 1rem;
+			top: 7.4rem;
+		}
+		.p9-8{
+			width: 30%;
+			position: absolute;
+			left: 3.5rem;
+			top: 7.4rem;
+		}
+		.p10-1{
+			width: -4.5rem;
+			font-size: 0.5rem;
+			color:#fff;
+			margin: -6.4rem 0.5rem;
+		}
+		.p10-2{
+			font-size: 0.25rem;
+			color:#fff;
+			margin: 7rem 0.5rem;
+		}
+		.p10-3{
+			width: 90%;
+			position: absolute;
+			top: 5.5rem;
+			left: 50%;
+			margin-left: -169px;
+		}
+		.p11-1{
+			width: 44%;
+			position: absolute;
+			left: 0.3rem;
+			top: 1.4rem;
+		}
+		.p11-2{
+			width: 44%;
+			position: absolute;
+			left: 3.3rem;
+			top: 1.4rem;
+		}
+		.p11-3{
+			width: 44%;
+			position: absolute;
+			left: 0.3rem;
+			top: 3.4rem;
+		}
+		.p11-4{
+			width: 44%;
+			position: absolute;
+			left: 3.3rem;
+			top: 3.4rem;
+		}
+		.p11-5{
+			width: 44%;
+			position: absolute;
+			left: 0.3rem;
+			top: 5.4rem;
+		}
+		.p11-6{
+			width: 44%;
+			position: absolute;
+			left: 3.3rem;
+			top: 5.4rem;
+		}
+		.p11-7{
+			width: 44%;
+			position: absolute;
+			left: 0.3rem;
+			top: 7.4rem;
+		}
+		.p11-8{
+			width: 44%;
+			position: absolute;
+			left: 3.3rem;
+			top: 7.4rem;
+		}
+		.p12-1{
+			width: 100%;
+			display: block;
+			margin: 2.5rem auto 0;
+		}
+		.p12-2{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p12-3{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p12-4{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p12-5{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p12-6{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p12-7{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p12-8{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p12-9{
+			width: 100%;
+			display: block;
+			margin: 0 auto;
+		}
+		.p13-0{
+			width: 90%;
+			position: absolute;
+			top: 3.5rem;
+		}
+		.p13-1{
+			width: 65%;
+			display: block;
+			margin: 1rem auto 0;
+		}
+		.p13-2{
+			font-size: 0.35rem;
+			color:#fff;
+			margin: 1rem 0.5rem 0;
+		}
+		.p13-3{
+			font-size: 0.35rem;
+			color:#fff;
+			margin: 0.06rem 0.5rem 0;
+		}
+		.p13-4{
+			font-size: 0.28rem;
+			color:#fff;
+			margin: 0.35rem 0.4rem 0;
+		}
+		.p13-5{
+			width: 80%;
+			display: block;
+			margin: 0.5rem auto 0;
+		}
+		.mu{
+			display: block;
+		    position: absolute;
+		    width: 0.7rem;
+		    bottom: 0.2rem;
+		    right: 0.2rem;
+		    animation: mus 1.5s linear infinite;
+		    z-index: 10;
+		}
+		@keyframes mus{
+			0%{transform:rotateZ(0);}
+			100%{transform:rotateZ(360deg);}
+		}
+	</style>
+</head>
+<body>
+	<div class="swiper-container">
+	    <div class="swiper-wrapper">
+	        <div class="swiper-slide" style="background: url(img/1-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+				<img src="img/1-2.png" class='p1-1 ani'  swiper-animate-effect="fadeInDown" swiper-animate-duration="2s" swiper-animate-delay="0" alt="" >
+				<img src="img/1-1.png" class='p1-2 ani'  swiper-animate-effect="fadeInDown" swiper-animate-duration="2s" swiper-animate-delay="0" alt="" >
+	        </div>
+<!-- 2 -->
+	        <div class="swiper-slide" style="background: url(img/2-bg.png);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/2-1.png" class='p2-1 ani' swiper-animate-effect="fadeInDown " swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/2-2.png" class='p2-2 ani' swiper-animate-effect="fadeInDown " swiper-animate-duration="1s" swiper-animate-delay="1s" alt="">
+
+	        	<!-- <div class="box">
+	        		<div class="t"></div>
+	        		<div class="m"></div>
+	        		<div class="b"></div>
+	        	</div> -->
+	        </div>
+<!-- 3 -->
+	        <div class="swiper-slide" style="background: url(img/page3.jpg);background-size:cover;">
+				<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        </div>
+<!-- 4	-->
+	        <div class="swiper-slide" style="background: url(img/4-bg.png);background-size:cover;">
+				<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+				<p class="p4-0 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1.5s" swiper-animate-delay="0" >产学研创高效教育模式</p>
+				<img src="img/page4i.png" class='p4-1 ani' swiper-animate-effect="rubberBand" swiper-animate-duration="1s" swiper-animate-delay="1s" alt="">
+	        </div>
+<!-- 5 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/page5i.png" class='p5-1 ani' swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="0" alt="">
+	        	<img src="img/1-3.png" class='p5-2 ani' swiper-animate-effect="rotateOutDownRight" swiper-animate-duration="10s" swiper-animate-delay="1.5s" alt="">
+	        	<p class="p5-3 ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="0.5s">博看文思的客户遍布全球，研发项目涉及电子商务、IT服务、P2P、SNS、大数据、智能硬件、可穿戴设备、云计算等各行各业，博看文思自主研发的APP产品被多次评为“精品应用”。博看文思的项目成果不仅极大地满足了客户的需求，并且强有力地推动了移动互联网行业的发展。</p>
+	        </div>
+<!-- 6 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/page6i.png" class='p5-1 ani' swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="0" alt="">
+	        	<img src="img/1-3.png" class='p5-2 ani' swiper-animate-effect="rotateOutDownRight" swiper-animate-duration="10s" swiper-animate-delay="1.5s" alt="">
+	        	<p class="p5-3 ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="0.5s">博看文思团队由中、美300余位专家组成，拥有国内先进的自主知识产权的游戏物理引擎、3D引擎和手机跨平台开发框架，与包括世界500强在内的多家企业进行项目外包、技术解决方案等综合服务。</p>
+	        </div>
+<!-- 7 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/page7i.png" class='p5-1 ani' swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="0" alt="">
+	        	<img src="img/1-3.png" class='p5-2 ani' swiper-animate-effect="rotateOutDownRight" swiper-animate-duration="10s" swiper-animate-delay="1.5s" alt="">
+	        	<p class="p5-3 ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="0.5s">博看文思专注于移动互联网高端人才培养，课程涵盖了iOS、HTML5和Android应用领域，先后在北京、广州、厦门、西安等地建立实训中心，累计为企业输送了6万名高级移动开发人才。</p>
+	        </div>
+<!-- 8 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/page8i.png" class='p5-1 ani' swiper-animate-effect="flip" swiper-animate-duration="1s" swiper-animate-delay="0" alt="">
+	        	<img src="img/1-3.png" class='p5-2 ani' swiper-animate-effect="rotateOutDownRight" swiper-animate-duration="10s" swiper-animate-delay="1.5s" alt="">
+	        	<p class="p5-3 ani" swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="0.5s">作为国家自主创新示范区常青藤创业园所在地，博看文思用成熟的产品策划、构架、开发、上线等流程，鼓励大学生自主创业，博看提供创业初期最缺乏的项目（不低于5000美金），博看文思与创业团队全方位合作，共同研发、推广产品。</p>
+	        </div>
+<!-- 9 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/1-3.png" class='p9-1 ani' swiper-animate-effect="rotateOutDownRight" swiper-animate-duration="10s" swiper-animate-delay="1.5s" alt="">
+	        	<img src="img/8-1.png" class='p9-2 ani' swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s" alt="">
+	        	<img src="img/81.png" class='p9-3 ani' swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="1s" alt="">
+	        	<img src="img/82.png" class='p9-4 ani' swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="2s" alt="">
+	        	<img src="img/83.png" class='p9-5 ani' swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="3s" alt="">
+	        	<img src="img/84.png" class='p9-6 ani' swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="4s" alt="">
+	        	<img src="img/85.png" class='p9-7 ani' swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="5s" alt="">
+	        	<img src="img/86.png" class='p9-8 ani' swiper-animate-effect="fadeIn" swiper-animate-duration="1s" swiper-animate-delay="6s" alt="">
+	        </div>
+<!-- 10 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/1-3.png" class='p9-1 ani' swiper-animate-effect="rotateOutDownRight" swiper-animate-duration="10s" swiper-animate-delay="1.5s" alt="">
+	        	<p class="p10-1 ani" swiper-animate-effect="fadeInDown" swiper-animate-duration="1s" swiper-animate-delay="0.2s">合作企业</p>
+	        	<p class="p10-2 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="1s" swiper-animate-delay="0.3s">战略联盟与合作伙伴关系是博看文思业务持续发展的重要保证，博看文思已经与行业领导者建立了战略合作伙伴关系，紧密的合作伙伴关系，确保博看文思能够满足客户的各种需求，并为客户提供最优秀的解决方案。</p>
+	        	<img src="img/qyhz.png" class='p10-3 ani' swiper-animate-effect="fadeInUpBig" swiper-animate-duration="1s" swiper-animate-delay="1.1s" alt="">
+
+	        </div>
+<!-- 11 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/10-1.png" class='p9-2 ani' swiper-animate-effect="bounceInLeft" swiper-animate-duration="1s" swiper-animate-delay="0s" alt="">
+	        	<img src="img/101.jpg" alt="" class="p11-1 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.6s" swiper-animate-delay="0.5s">
+	        	<img src="img/102.jpg" alt="" class="p11-2 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.6s" swiper-animate-delay="1.5s">
+	        	<img src="img/103.jpg" alt="" class="p11-3 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.6s" swiper-animate-delay="2.5s">
+	        	<img src="img/104.jpg" alt="" class="p11-4 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.6s" swiper-animate-delay="3.5s">
+	        	<img src="img/105.jpg" alt="" class="p11-5 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.6s" swiper-animate-delay="4.5s">
+	        	<img src="img/106.jpg" alt="" class="p11-6 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.6s" swiper-animate-delay="5.5s">
+	        	<img src="img/107.jpg" alt="" class="p11-7 ani" swiper-animate-effect="fadeInLeft" swiper-animate-duration="0.6s" swiper-animate-delay="6.5s">
+	        	<img src="img/108.jpg" alt="" class="p11-8 ani" swiper-animate-effect="fadeInRight" swiper-animate-duration="0.6s" swiper-animate-delay="7.5s">
+	        </div>
+<!-- 12 -->
+	        <div class="swiper-slide" style="background: url(img/page11.jpg);background-size:cover;">
+	        	<img src="img/arrow.png" class='s-icon ani' swiper-animate-effect="fadeOutUp infinite" swiper-animate-duration="2s" swiper-animate-delay="0" alt="">
+	        	<img src="img/11_02.png" alt="" class="p12-1 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="0">
+	        	<img src="img/11_03.png" alt="" class="p12-2 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.6s">
+	        	<img src="img/11_04.png" alt="" class="p12-3 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.2s">
+	        	<img src="img/11_05.png" alt="" class="p12-4 ani"  swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="1.8s">
+	        	<img src="img/11_06.png" alt="" class="p12-5 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="2.4s">
+	        	<img src="img/11_07.png" alt="" class="p12-6 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="3.0s">
+	        	<img src="img/11_08.png" alt="" class="p12-7 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="3.6s">
+	        	<img src="img/11_09.png" alt="" class="p12-8 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="4.2s">
+	        	<img src="img/11_10.png" alt="" class="p12-9 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="0.8s" swiper-animate-delay="4.8s">
+	        </div>
+<!-- 13 -->
+	        <div class="swiper-slide" style="background: url(img/9-bg.jpg);background-size:cover;">
+	        	<img src="img/p12s.png" alt="" class="p13-0 ani" swiper-animate-effect="rotateOut" swiper-animate-duration="20s" swiper-animate-delay="0s">
+	        	<img src="img/p12t.png" alt="" class="p13-1 ani" swiper-animate-effect="lightSpeedIn" swiper-animate-duration="0.8s" swiper-animate-delay="0.2s">
+	        	<p class="p13-2 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s">电话：4006-333-186</p>
+	        	<p class="p13-3 ani" swiper-animate-effect="bounceIn" swiper-animate-duration="1s" swiper-animate-delay="1.2s">地址：北京石景山区总工会二层</p>
+	        	<p class="p13-4 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="1s" swiper-animate-delay="2s">长按二维码，对话博看文思</p>
+	        	<img src="img/p12e.jpg" alt="" class="p13-5 ani" swiper-animate-effect="fadeInDownBig" swiper-animate-duration="1s" swiper-animate-delay="3s">
+	        </div>
+	    </div>
+    
+	</div>
+	
+	<audio src="img/1.mp3" autoplay="autoplay" loop="loop" class="aud"></audio>
+	<img src="img/music_icon.png" alt="" class="mu">
+
+	<script src="js/jquery-1.8.3.min.js"></script>
+	<script src="js/swiper.jquery.min.js"></script>
+	<script src="js/swiper.animate.min.js"></script>
+	<script>
+		var col=true;
+		$('.mu').click(function(){
+			if(col){
+				$('.mu').attr('src','img/music_off.png').css({animation:'none'});
+				$('.aud').removeAttr('src');
+				col=false;
+			}else{
+				$('.mu').attr('src','img/music_icon.png').css({animation:'mus 1.5s linear infinite'});
+				$('.aud').attr('src','img/1.mp3');
+				col=true;
+			}
+		})
+
+		$(".swiper-wrapper").css({
+						width: $(window).width(),
+						height: $(window).height()
+					})
+
+
+		var mySwiper = new Swiper ('.swiper-container', {
+	    direction: 'vertical',
+	    // loop: true,
+	    freeMode:false,
+	   
+	 	
+	 	onInit: function(swiper){ //Swiper2.x的初始化是onFirstInit
+		    swiperAnimateCache(swiper); //隐藏动画元素 
+		    swiperAnimate(swiper); //初始化完成开始动画
+		  }, 
+		onSlideChangeEnd: function(swiper){ 
+			console.log(swiper.activeIndex);
+		    // $('.swiper-slide').eq(swiper.activeIndex).show().siblings().hide();
+		    swiperAnimate(swiper); //每个slide切换结束时也运行当前slide动画
+		  	} 
+		  }) 
+		  
+
+	
+	</script>
+</body>
+</html>

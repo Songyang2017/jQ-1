@@ -1,0 +1,42 @@
+*{
+			margin: 0;
+			padding: 0;
+		}
+		html{
+			font-size: 100%;
+		}
+		.s-icon{
+			position: absolute;
+			bottom: 0;
+			margin-left: -0.5rem;
+			display: block;
+			left: 50%;
+
+		}
+		.p2-1{
+			display: block;
+			width: 3.50rem;
+			margin: 2.04813rem auto 0;
+		}
+		.p2-2{
+			display: block;
+			width: 6.02rem;
+			margin: 2.44rem auto 0;
+		}
+		.p9-1{
+			display: block;
+			width: 6.4rem;
+			margin: 0 auto;
+		}
+		.p9-2{
+			display: block;
+			width: 6.4rem;
+			height: 3.6803rem;
+			margin: 0 auto;
+		}
+		.p9-3{
+			display: block;
+			width: 6.4rem;
+			height: 3.98rem;
+			margin: 0 auto;
+		}
